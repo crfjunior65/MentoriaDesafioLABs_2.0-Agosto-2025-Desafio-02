@@ -89,3 +89,4 @@ exemplo*/
 tokens-*.*
 tokens-*.json
 tokens-*.json
+.pre-commit*.*
