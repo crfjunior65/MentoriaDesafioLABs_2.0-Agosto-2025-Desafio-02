@@ -7,7 +7,7 @@
 
 Este projeto é a solução para o segundo desafio da mentoria Labs 2.0, focado em implementar infraestrutura automatizada e reprodutível na AWS usando Terraform. A instância EC2 é provisionada com todas as configurações necessárias, incluindo roles de IAM, security groups e scripts de inicialização via user data. Neese proje implementmo Remote State usando S3(AWS) como backend.
 
-Sibimos uma aplicação Bia 2025 4.2.0, Rodandoem Container(Docker).
+Subimos uma aplicação Bia 2025 4.2.0, Rodandoem Container(Docker).
 
 ## 🏗️ Arquitetura
 
@@ -22,7 +22,7 @@ O projeto provisiona os segu recursos na AWS:
 Diagrama simplificado:
 🔍 Estrutura do Projeto
 
-![alt text](<Apresentacao/Captura de tela em 2025-08-20 19-02-51.png>)
+![alt text](<Dados-Desafio02/Captura de tela em 2025-08-20 19-02-51.png>)
 
 ## ⚙️ Pré-requisitos
 
