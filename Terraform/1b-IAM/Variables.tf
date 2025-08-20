@@ -1,11 +1,15 @@
 variable "Environment" {
   description = "The environment for the Terraform deployment"
   type        = string
-  default     = "DevOps-Projetos_AWS"
+  default     = "Desafio-02/Formacao_AWS"
 
 }
 variable "AWS_REGION" {
   description = "The AWS region to deploy resources"
   type        = string
-  default     = "us-east-2"
-}   
+  default     = "us-east-1"
+}
+variable "aws_profile" {
+  type    = string
+  default = "crfjunior-outlook"
+}

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pwd
-terraform fmt --recursive 
+terraform fmt --recursive
 #>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 
 #drwxrwxr-x  2 junior junior 4,0K set 19 19:06 0-GitHub-Sync
@@ -19,37 +19,37 @@ terraform fmt --recursive
 #0-State
 cd 1-VPC
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 terraform init -reconfigure
 terraform validate
-terraform plan -out plan.out 
-#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && 
-terraform apply plan.out 
+terraform plan -out plan.out
+#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP &&
+terraform apply plan.out
 terraform output >OUTPUT
 cd ..
 
 cd 1a-SegGroup
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/Terraform/LogTerraform-UP
 terraform init -reconfigure
 terraform validate
-terraform plan -out plan.out 
-#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && 
-terraform apply plan.out 
+terraform plan -out plan.out
+#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP &&
+terraform apply plan.out
 terraform output >OUTPUT
 cd ..
 
 cd 1b-IAM
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 terraform init -reconfigure
 terraform validate
-terraform plan -out plan.out 
-#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && 
-terraform apply plan.out 
+terraform plan -out plan.out
+#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP &&
+terraform apply plan.out
 terraform output >OUTPUT
 cd ..
 
@@ -58,31 +58,31 @@ cd ..
 #pwd >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 #terraform init -reconfigure
 #terraform validate
-#terraform plan -out plan.out >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && terraform apply plan.out 
+#terraform plan -out plan.out >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && terraform apply plan.out
 #terraform output >OUTPUT
-#cd .. 
+#cd ..
 
 cd 3-RDS
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 terraform init -reconfigure
 terraform validate
-terraform plan -out plan.out 
-##>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && 
-terraform apply plan.out 
+terraform plan -out plan.out
+##>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP &&
+terraform apply plan.out
 terraform output >OUTPUT
 cd ..
 
 cd 3a-Orquestrador
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 #terraform init -reconfigure
 #terraform validate
-#terraform plan -out plan.out 
-#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && 
-#terraform apply plan.out 
+#terraform plan -out plan.out
+#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP &&
+#terraform apply plan.out
 #terraform output >OUTPUT
 
 #cd ZbxDb
@@ -90,58 +90,58 @@ pwd
 #pwd >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 ##terraform init -reconfigure
 #terraform validate
-#terraform plan -out plan.out >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && terraform apply plan.out 
+#terraform plan -out plan.out >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && terraform apply plan.out
 #terraform output >OUTPUT
 #cd ..
 cd ..
 
 cd 3b-EC2
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 ##terraform init -reconfigure
 ##terraform validate
-##terraform plan -out plan.out 
-###>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && 
-##terraform apply plan.out 
+##terraform plan -out plan.out
+###>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP &&
+##terraform apply plan.out
 ##terraform output >OUTPUT
 cd ..
 
 cd 4-Bucket
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 #terraform init -reconfigure
 #terraform validate
-#terraform plan -out plan.out && terraform apply plan.out 
+#terraform plan -out plan.out && terraform apply plan.out
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 #terraform output >OUTPUT
 cd ..
 
 cd 5-ECR
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 terraform init -reconfigure
 terraform validate
-terraform plan -out plan.out 
-#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && 
-terraform apply plan.out 
+terraform plan -out plan.out
+#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP &&
+terraform apply plan.out
 terraform output >OUTPUT
 cd ..
 
 cd 6-ECS
 pwd
-pwd 
+pwd
 #>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 cd EC2
 pwd
 #pwd >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 ##terraform init -reconfigure
 ##terraform validate
-##terraform plan -out plan.out 
-#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && 
-##terraform apply plan.out 
+##terraform plan -out plan.out
+#>>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP &&
+##terraform apply plan.out
 ##terraform output >OUTPUT
 cd ..
 #pwd
@@ -150,10 +150,10 @@ cd ..
 #pwd >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP
 ##terraform init -reconfigure
 #terraform validate
-#terraform plan -out plan.out >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && terraform apply plan.out 
+#terraform plan -out plan.out >>/home/junior/Dados/FormacaoAWS/MentoriaDesafioLABS_2.0/Terraform/LogTerraform-UP && terraform apply plan.out
 #terraform output >OUTPUT
 #cd ..
-#pwd 
+#pwd
 cd ..
 pwd
 

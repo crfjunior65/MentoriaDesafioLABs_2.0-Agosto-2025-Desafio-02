@@ -5,7 +5,7 @@ locals {
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  version = "5.1.2"
+  version = "6.0.1"
   name    = "Formacao_AWS-vpc"
   cidr    = "10.12.0.0/16"
 
@@ -21,7 +21,9 @@ module "vpc" {
   private_subnets  = ["10.12.201.0/24", "10.12.202.0/24"]
   database_subnets = ["10.12.21.0/24", "10.12.22.0/24"]
   #assign_generated_ipv6_cidr_block = true
-  map_public_ip_on_launch            = false
+  #associate_public_ip_address = true
+
+  map_public_ip_on_launch            = true
   create_database_subnet_group       = true # var.create_database_subnet_group
   create_database_subnet_route_table = true # var.create_database_subnet_route_table
   create_igw                         = true
@@ -53,7 +55,7 @@ module "vpc" {
 
   tags = {
     Terraform   = "true"
-    Environment = "Projeto-${var.environment}"
+    Environment = "Projeto-${var.Environment}"
     Management  = "Terraform"
   }
 }

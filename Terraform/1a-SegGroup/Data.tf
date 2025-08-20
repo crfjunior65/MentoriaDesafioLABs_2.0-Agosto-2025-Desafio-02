@@ -1,8 +1,9 @@
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "crfjunior-terraform-state-bia"
-    key    = "vpc/terraform.tfstate"
+    bucket  = "crfjunior-terraform-state"
+    key     = "vpc/terraform.tfstate"
+    profile = "crfjunior-outlook" # Use your AWS profile if needed
     #key    = "RemoteState/vpc/terraform.tfstate"
     #bucket = "terraform-state-prod"
     #key    = "network/terraform.tfstate"

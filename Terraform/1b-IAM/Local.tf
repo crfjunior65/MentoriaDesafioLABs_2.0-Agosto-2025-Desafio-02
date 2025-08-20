@@ -2,7 +2,7 @@ locals {
   region = "eu-west-2"
   name   = "ex-${basename(path.cwd)}"
 
-  vpc_cidr = "10.20.0.0/16"
+  vpc_cidr = "10.12.0.0/16"
   #azs      = slice(data.aws_availability_zones.available.names, 0, 3)
 
   container_name = "ecsprojeto-frontend"

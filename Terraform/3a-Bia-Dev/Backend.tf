@@ -1,12 +1,7 @@
-variable "environment" {
-  type    = string
-  default = "bia"
-}
-
 terraform {
   backend "s3" {
     bucket  = "crfjunior-terraform-state"
-    key     = "sg/terraform.tfstate"
+    key     = "Orquestrador/terraform.tfstate"
     region  = "us-east-1"
     profile = "crfjunior-outlook" # Use your AWS profile if needed
     #dynamodb_table = "meu-lock-dynamodb"  # Para locking

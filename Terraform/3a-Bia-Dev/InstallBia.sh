@@ -1,7 +1,7 @@
-#! /bin/bash 
+#! /bin/bash
 
 
-# Instalacao Terrafor 
+# Instalacao Terrafor
 echo "# Instalacao Terraform, Iniciada..." >>/home/ec2-user/AndamentoUserData.Terraform
 mkdir /home/ec2-user/Install
 echo "Executamos USER DATA" >/home/ec2-user/Install/UserData
@@ -18,7 +18,7 @@ yum update -y
 yum upgrade -y
 yum install htop wget unzip -y
 
-#Instalação PostGres 
+#Instalação PostGres
 echo "Executando Instalacao PostGre SQL 15..." >/home/ec2-user/Install/UserData
 yum install postgresql15 -y     # postgresql-server postgresql-contrib -y
 
@@ -26,7 +26,7 @@ yum install postgresql15 -y     # postgresql-server postgresql-contrib -y
 #https://github.com/aws/efs-utils?tab=readme-ov-file#on-other-linux-distributions
 #yum update -y
 yum install nfs-common -y
-yum -y install binutils 
+yum -y install binutils
 #rustc cargo pkg-config libssl-dev
 yum install -y amazon-efs-utils
 

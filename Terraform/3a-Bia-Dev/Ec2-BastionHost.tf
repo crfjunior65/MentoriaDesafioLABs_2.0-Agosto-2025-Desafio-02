@@ -27,10 +27,10 @@ resource "aws_instance" "ec2_bastianhost" {
   iam_instance_profile = data.terraform_remote_state.iam.outputs.iam_ssm_profile.id
 
   tags = {
-    Name        = "BastionHost"
+    Name        = "Bia-Dev" #BastionHost"
     Terraform   = "true"
     AZ          = data.terraform_remote_state.vpc.outputs.vpc_azs_id[0]
-    Environment = "Projeto"
+    Environment = "Projeto-${var.Environment}"
     Management  = "Terraform"
   }
   # Sintaxe moderna para listas, sem a interpolação "${...}"

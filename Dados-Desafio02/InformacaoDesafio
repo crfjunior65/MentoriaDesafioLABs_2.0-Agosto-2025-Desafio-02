@@ -1,0 +1,6 @@
+DESAFIO LABS 2.0 - AGO/25 -  Terraform, IAC, Mensageria e Arquitetura Serverless
+Desafio 02
+
+SERVIÇO DESAFIO:	Terraform + EC2
+OBJETIVO:	Lançar máquina de trabalho na nuvem (bia-dev) usando terraform com state remoto.
+Observação:	Assista todas as aulas antes de sair colocando a mão na massa. Pode assistir em 2x da primeira vez. Inclusive a última aula de apoio que vai te passar um entendimento da diferença entre IAC e AWS CLI.

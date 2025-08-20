@@ -3,12 +3,12 @@
 provider "aws" {
   # Configuration options
   #alias = "east-1"
-  #profile = crfjunior072024
-  region = "us-east-1"
+  profile = var.aws_profile
+  region  = var.AWS_REGION
   default_tags {
     tags = {
       Terraform   = "true"
-      Environment = "Projeto-${var.environment}"
+      Environment = "Projeto-${var.Environment}"
       Management  = "Terraform"
       Owner       = "Junior_Fernandes"
     }
@@ -17,13 +17,13 @@ provider "aws" {
 
 provider "aws" {
   # Configuration options
-  alias = "east-2"
-  #profile = crfjunior072024
-  region = "us-east-2"
+  alias   = "east-2"
+  profile = var.aws_profile
+  region  = "us-east-2"
   default_tags {
     tags = {
       Terraform   = "true"
-      Environment = "Projeto-${var.environment}"
+      Environment = "Projeto-${var.Environment}"
       Management  = "Terraform"
       Owner       = "Junior_Fernandes"
     }

@@ -3,13 +3,13 @@
 provider "aws" {
   # Configuration options
   #alias = "us-east-1"
-  #profile = crfjunior072024
-  region = "us-east-1"
+  profile = "crfjunior-outlook"
+  region  = "us-east-1"
   #alias  = "us-1"
   default_tags {
     tags = {
       Terraform    = "true"
-      Environment  = "Projeto"
+      Environment  = "Desafio-02-Formacao-AWS-bia"
       Management   = "Terraform"
       RegiaoCriada = "us-east-1"
     }
@@ -19,9 +19,9 @@ provider "aws" {
 provider "aws" {
   # Configuration options
   #alias = "sa-east-1"
-  #profile = crfjunior072024
-  region = "sa-east-1"
-  alias  = "sa-1"
+  profile = "crfjunior-outlook"
+  region  = "sa-east-1"
+  alias   = "sa-1"
   default_tags {
     tags = {
       Terraform    = "true"

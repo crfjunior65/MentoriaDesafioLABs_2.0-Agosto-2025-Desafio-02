@@ -15,18 +15,18 @@ clear
 cd 6-ECS
 cd EC2
 pwd
-terraform destroy -auto-approve 
+terraform destroy -auto-approve
 cd ..
 #cd Fargate
 #pwd
-#terraform destroy -auto-approve 
+#terraform destroy -auto-approve
 #cd ..
 cd ..
 
 cd 5-ECR
 pwd
 aws ecr delete-repository --repository-name bia --region us-east-1 --force
-terraform destroy -auto-approve 
+terraform destroy -auto-approve
 cd ..
 
 #cd 4-Bucket
@@ -52,7 +52,7 @@ cd 4-Alb
 
 cd 3-RDS
 pwd
-terraform destroy -auto-approve 
+terraform destroy -auto-approve
 cd ..
 
 cd 3a-Orquestrador

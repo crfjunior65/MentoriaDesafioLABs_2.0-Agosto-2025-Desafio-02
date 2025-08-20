@@ -1,4 +1,4 @@
-#Data Pasta Orquestraor
+#Data Pasta Orquestrador
 /*
 aws ec2 describe-images \
   --owners amazon \
@@ -130,8 +130,9 @@ data "aws_ami" "ubuntu_linux_2204" {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "crfjunior-terraform-state-bia"
-    key    = "vpc/terraform.tfstate"
+    bucket  = "crfjunior-terraform-state"
+    key     = "vpc/terraform.tfstate"
+    profile = "crfjunior-outlook" # Use your AWS profile if needed
     #key    = "RemoteState/vpc/terraform.tfstate"
     #bucket = "terraform-state-prod"
     #key    = "network/terraform.tfstate"
@@ -142,8 +143,9 @@ data "terraform_remote_state" "vpc" {
 data "terraform_remote_state" "sg" {
   backend = "s3"
   config = {
-    bucket = "crfjunior-terraform-state-bia"
-    key    = "sg/terraform.tfstate"
+    bucket  = "crfjunior-terraform-state"
+    key     = "sg/terraform.tfstate"
+    profile = "crfjunior-outlook" # Use your AWS profile if needed
     #key    = "RemoteState/EFS/terraform.tfstate"
     #bucket = "terraform-state-prod"
     #key    = "network/terraform.tfstate"
@@ -166,8 +168,9 @@ data "terraform_remote_state" "efs" {
 data "terraform_remote_state" "iam" {
   backend = "s3"
   config = {
-    bucket = "crfjunior-terraform-state-bia"
-    key    = "iam/terraform.tfstate"
+    bucket  = "crfjunior-terraform-state"
+    key     = "iam/terraform.tfstate"
+    profile = "crfjunior-outlook" # Use your AWS profile if needed
     #key    = "RemoteState/EFS/terraform.tfstate"
     #bucket = "terraform-state-prod"
     #key    = "network/terraform.tfstate"
@@ -175,17 +178,21 @@ data "terraform_remote_state" "iam" {
   }
 }
 
+/*
+
 data "terraform_remote_state" "rds" {
   backend = "s3"
   config = {
-    bucket = "crfjunior-terraform-state-bia"
-    key    = "rds/terraform.tfstate"
+    bucket  = "crfjunior-terraform-state"
+    key     = "rds/terraform.tfstate"
+    profile = "crfjunior-outlook" # Use your AWS profile if needed
     #key    = "RemoteState/EFS/terraform.tfstate"
     #bucket = "terraform-state-prod"
     #key    = "network/terraform.tfstate"
     region = "us-east-1"
   }
 }
+*/
 
 /*
 data "local_file" "public_key" {

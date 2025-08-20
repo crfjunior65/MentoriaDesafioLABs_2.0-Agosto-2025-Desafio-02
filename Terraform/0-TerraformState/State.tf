@@ -1,22 +1,5 @@
-/*
-#terraform {
-#  backend "s3" {
-#    bucket = "crfjunior-remote-state"
-#    key    = "vpc/terraform.tfstate"
-#    region = "us-east-1"
-#    #dynamodb_table = "meu-lock-dynamodb"  # Para locking
-#    #encrypt        = true                 # Criptografar o arquivo de estado
-#  }
-#}
-*/
-
-# variable "environment" {
-#   type    = string
-#   default = "bia"
-# }
-
 resource "aws_s3_bucket" "s3_state" {
-  bucket = "crfjunior-terraform-state-bia"
+  bucket = "crfjunior-terraform-state"
 
   #lifecycle {
   #  prevent_destroy = false #true
@@ -27,7 +10,7 @@ resource "aws_s3_bucket" "s3_state" {
   }
 
   tags = {
-    Name = "crfunior-terraform-state-bia"
+    Name = "crfunior-terraform-state"
 
   }
 }
@@ -40,6 +23,7 @@ resource "aws_s3_bucket_versioning" "terrafor_state_versioning" {
   }
 }
 
+/*
 # Criação da Tabela DynamoDB para lock do Terraform State
 resource "aws_dynamodb_table" "terraform_locks" {
   name         = "terraform-state-lock"
@@ -55,3 +39,4 @@ resource "aws_dynamodb_table" "terraform_locks" {
     Name = "terraform-state-lock"
   }
 }
+*/
