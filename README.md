@@ -22,29 +22,7 @@ O projeto provisiona os segu recursos na AWS:
 Diagrama simplificado:
 🔍 Estrutura do Projeto
 
-bia/
-├── 📁 api/                    # Backend API (Node.js + Express)
-│   ├── controllers/           # Controladores da aplicação
-│   ├── models/               # Modelos Sequelize
-│   ├── routes/               # Definição de rotas
-│   └── data/                 # Dados estáticos
-├── 📁 client/                # Frontend (React + Vite)
-│   ├── src/                  # Código fonte React
-│   ├── public/               # Assets estáticos
-│   └── package.json          # Dependências frontend
-├── 📁 IaaC/                  # Infrastructure as Code
-│   └── Terraform/            # Templates Terraform
-├── 📁 database/              # Configurações de banco
-│   └── migrations/           # Migrações Sequelize
-├── 📁 scripts/               # Scripts de automação
-├── 📁 analise-custos/        # Análise e otimização de custos
-├── 📁 docs/                  # Documentação técnica
-├── 📁 .amazonq/              # Configurações Amazon Q
-├── 🐳 Dockerfile             # Container da aplicação
-├── 📋 buildspec.yml          # Configuração CodeBuild
-├── 🐳 compose.yml            # Docker Compose para desenvolvimento
-└── 📦 package.json           # Dependências do projeto
-
+![alt text](<Apresentacao/Captura de tela em 2025-08-20 19-02-51.png>)
 
 ## ⚙️ Pré-requisitos
 
@@ -172,15 +150,6 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 ---
 
 
-## 🏗️ Estrutura
-
-```bash
-.
-├── terraform/
-├── ansible/
-├── docker/
-└── kubernetes/
-```
 
 🙏 Agradecimentos
 
