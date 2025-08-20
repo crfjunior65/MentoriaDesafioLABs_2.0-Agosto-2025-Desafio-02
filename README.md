@@ -146,7 +146,41 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)](https://terraform.io/)
+---
+[![CI/CD](https://github.com/seu-usuario/seu-repositorio/actions/workflows/main.yml/badge.svg)](https://github.com/seu-usuario/seu-repositorio/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/seu-usuario/seu-repositorio.svg)](https://github.com/seu-usuario/seu-repositorio/commits/main)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+# Infrastructure as Code Project
 
+![Terraform](https://img.shields.io/badge/Terraform-1.5.0-623CE4.svg?logo=terraform)
+![AWS](https://img.shields.io/badge/AWS-EC2%2FS3%2FRDS-FF9900.svg?logo=amazonaws)
+![Ansible](https://img.shields.io/badge/Ansible-2.15-EE0000.svg?logo=ansible)
+![Docker](https://img.shields.io/badge/Docker-24.0-2496ED.svg?logo=docker)
+
+[![Terraform Validation](https://github.com/seu-usuario/iac-project/actions/workflows/terraform.yml/badge.svg)](https://github.com/seu-usuario/iac-project/actions)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Last Deployment](https://img.shields.io/badge/Last%20Deployment-2023--10--15-brightgreen.svg)](https://github.com/seu-usuario/iac-project/deployments)
+---
+![Bright Green](https://img.shields.io/badge/Status-Bright_Green-brightgreen.svg)
+![Green](https://img.shields.io/badge/Status-Green-green.svg)
+![Yellow](https://img.shields.io/badge/Status-Yellow-yellow.svg)
+![Orange](https://img.shields.io/badge/Status-Orange-orange.svg)
+![Red](https://img.shields.io/badge/Status-Red-red.svg)
+![Blue](https://img.shields.io/badge/Status-Blue-blue.svg)
+---
+
+
+## 🏗️ Estrutura
+
+```bash
+.
+├── terraform/
+├── ansible/
+├── docker/
+└── kubernetes/
+```
 🙏 Agradecimentos
 
 Agradeço a Deus em   Primeiro Lugar, pelas Bençãos diarias, ao mentor Henrylle Maia pela excelente didática e por promover a mentoria Desafio Labs 2.0, que é uma oportunidade invaluable para elevar nossas skills em cloud.
