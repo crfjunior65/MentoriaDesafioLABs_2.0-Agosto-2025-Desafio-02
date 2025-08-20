@@ -114,7 +114,37 @@ terraform destroy -auto-approve
 👨‍💻 Autor
 
 Junior Fernandes
+---
+[![Terraform](https://img.shields.io/badge/Terraform-1.0+-623CE4?logo=terraform&logoColor=white)](https://terraform.io)
+[![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://docker.com)
+[![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![React](https://img.shields.io/badge/React-Vite-61DAFB?logo=react&logoColor=black)](https://reactjs.org)
 
+**Serviço do Desafio:** Terraform + EC2
+**Objetivo:** Lançar uma máquina de trabalho na nuvem AWS (`bia-dev`) utilizando Terraform com estado remoto, seguindo as melhores práticas de Infrastructure as Code (IaC).
+
+## 📋 Sobre o Projeto
+
+Este projeto é a solução para o segundo desafio da mentoria Labs 2.0, focado em implementar infraestrutura automatizada e reprodutível na AWS usando Terraform. A instância EC2 é provisionada com todas as configurações necessárias, incluindo roles de IAM, security groups e scripts de inicialização via user data.
+
+## 🏗️ Arquitetura
+
+O projeto provisiona os seguintes recursos na AWS:
+
+- **Amazon EC2 Instance:** Uma instância Amazon Linux para ambiente de desenvolvimento.
+- **Security Group:** Regras de firewall configuradas para permitir acesso SSH (porta 22) e tráfego de saída.
+- **IAM Role & Instance Profile:** Permissões concedidas à instância para interagir com outros serviços AWS de forma segura.
+- **Remote State Backend:** Configuração do estado do Terraform armazenado remotamente.
+
+## 🛠️ Tecnologias Utilizadas
+
+[![AWS](https://img.shields.io/badge/AWS-EC2-FF9900?logo=amazonaws&logoColor=white)](https://aws.amazon.com/ec2/)
+[![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4?logo=terraform&logoColor=white)](https://terraform.io)
+[![Docker](https://img.shields.io/badge/Docker-Container-2496ED?logo=docker&logoColor=white)](https://docker.com)
+[![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![React](https://img.shields.io/badge/React-Vite-61DAFB?logo=react&logoColor=black)](https://reactjs.org)
+---
 [![Terraform](https://img.shields.io/badge/Terraform-1.0+-623CE4?logo=terraform&logoColor=white)](https://terraform.io)
 [![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)
 
