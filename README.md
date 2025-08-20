@@ -181,6 +181,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 ├── docker/
 └── kubernetes/
 ```
+
 🙏 Agradecimentos
 
 Agradeço a Deus em   Primeiro Lugar, pelas Bençãos diarias, ao mentor Henrylle Maia pela excelente didática e por promover a mentoria Desafio Labs 2.0, que é uma oportunidade invaluable para elevar nossas skills em cloud.
